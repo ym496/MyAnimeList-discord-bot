@@ -29,18 +29,18 @@ A discord bot to surf the MyAnimeList website on discord with the help of the [J
 ![char images](https://media.discordapp.net/attachments/870414758006911036/884558109664751636/github_img.gif)
 
 # Installing
-**Make sure to get Python 3.8 or higher.**
+* Make sure to get Python 3.8 or higher.
 
-1. **Set up venv** 
+* Set up venv
 ```
 python3.8 -m venv venv
 ```
-2. **Install dependencies**
+* Install dependencies
 ```
 pip install -U -r requirements.txt
 ```
 
-To install the development version, do the following:
+* To install the development version, do the following:
 ```
 $ git clone https://github.com/WildCyclotron/MyAnimeList-discord-bot.git
 ```
