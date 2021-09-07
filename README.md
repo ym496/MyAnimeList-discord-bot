@@ -45,8 +45,8 @@ pip install -U -r requirements.txt
 $ git clone https://github.com/WildCyclotron/MyAnimeList-discord-bot.git
 ```
 # Running 
-1. Edit `main.py` and replace the `'Token'` with the your bot's actual token.
-2. Save your changes and run the `main.py` file.
+* Edit `main.py` and replace the `'Token'` with the your bot's actual token.
+* Save your changes and run the `main.py` file.
 ```
 python main.py 
 ```
