@@ -1,8 +1,6 @@
 import asyncio
 
-"""A function that allows users to select the desired name from the matching results.
-
-"""
+"""A function that allows users to select the desired name from the matching results."""
 
 
 async def selection(self,ctx,message,data_len,type):
