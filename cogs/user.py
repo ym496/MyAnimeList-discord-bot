@@ -1,12 +1,13 @@
 import discord
 from discord.ext import commands,flags
-bot = commands.Bot(command_prefix='+',case_insensitive=True)
 import time
 import DiscordUtils
 import re
 from discord.ext.commands import MissingRequiredArgument
 from cogs.getjson import jikanjson
 from cogs.userflags import userstatus
+
+"""To get the lists of animes/mangas and send them in the form embed."""
 
 async def status(ctx,userlist,title):
   status_list = []
@@ -16,6 +17,7 @@ async def status(ctx,userlist,title):
   embed=discord.Embed(title=title,color=0x70ff72,description=status)
   await ctx.send(embed=embed)
 
+"""To get the lists of animes/mangas and send them in the form multiple embeds when length > 15."""
 
 async def bigstatus(ctx,userlist,title):
   status_list = []
@@ -37,6 +39,7 @@ async def bigstatus(ctx,userlist,title):
   paginator.add_reaction('🔐', "lock")
   await paginator.run(embed_list)
   
+"""To remove the html tags from the about page return string."""
 
 def htmltag(text,username):
   if text:
@@ -47,6 +50,8 @@ def htmltag(text,username):
     mal_name = username['username']
     message = f'This is the profile of {mal_name}.'
     return message
+
+"""To get the lists of favorites of user."""
 
 def favorites(category,username,embed):
   fav_list = []
@@ -69,6 +74,7 @@ desc = f"Shows detailed information about MyAnimeList user's list or sends you t
 class User_Info(commands.Cog):
   def __init__(self, client):
     self.client = client
+
 
 
   @flags.add_flag("--watching", action="store_true" )
@@ -98,6 +104,8 @@ class User_Info(commands.Cog):
     time.sleep(3)
     await msg.delete()
 
+    """Send different outputs depending on the flags passed. I don't know if this is the best way to do it."""
+    
     if flags['watching']==True:
       url = f'https://api.jikan.moe/v3/user/{name}/animelist/watching'
       await userstatus(ctx,name,url,status,bigstatus,'anime','Watching')
