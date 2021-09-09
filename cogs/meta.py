@@ -57,11 +57,11 @@ class Help(commands.Cog):
         if name.lower() == input[0].lower() or input[0].lower() in command_aliases:
           if len(command_aliases) == 0:
             title = f'`{name}`' + ' command documentation. ' 
-            emb = discord.Embed(title=title,description=None,color=discord.Color.green())
+            emb = discord.Embed(title=title,description='',color=discord.Color.green())
           else:
             aliases = ', '.join(command_aliases)
             title = f'`{name}`' + ' command documentation. ' + f'(Aliases: `{aliases}`)' 
-            emb = discord.Embed(title=title,description=None,color=discord.Color.green())
+            emb = discord.Embed(title=title,description='',color=discord.Color.green())
           
           emb.add_field(name='Usage', value='\u200b'+commands_list[i].usage, inline=False)
           emb.add_field(name='Description', value=commands_list[i].description, inline=False)
@@ -70,12 +70,12 @@ class Help(commands.Cog):
           break
             
       else:
-        emb = discord.Embed(title=None,description=f"Command `{input[0]}` not found! \n Use `{prefix}help` to view the list of commands.",color=0xce503e)
+        emb = discord.Embed(title='',description=f"Command `{input[0]}` not found! \n Use `{prefix}help` to view the list of commands.",color=0xce503e)
 
         
     elif len(input) > 1:
       user_input = ' '.join(input)
-      emb = discord.Embed(title=None,description=f'Command `{user_input}` not found!\n Use `{prefix}help` to view the list of commands.',color=0xce503e)
+      emb = discord.Embed(title='',description=f'Command `{user_input}` not found!\n Use `{prefix}help` to view the list of commands.',color=0xce503e)
     else:
       pass
                                   
