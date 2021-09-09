@@ -1,2 +1,3 @@
 discord
 DiscordUtils
+alt-discord-flags
