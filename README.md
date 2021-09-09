@@ -6,7 +6,6 @@ A discord bot made to surf the MyAnimeList website on discord with the help of t
 # Planned
 | Commands      | Description |
 | ----------- | ----------- |
-| `+user <name>`      |  To view profile, animelist, mangalist of any user.      |
 | `+top <type>`   | To view rankings of characters, animes and mangas.        |
 # Commands 
 ## Search
@@ -28,6 +27,14 @@ A discord bot made to surf the MyAnimeList website on discord with the help of t
 ![char search](https://media.discordapp.net/attachments/870414758006911036/884554644972523520/github_char.gif)
 ![char images](https://media.discordapp.net/attachments/870414758006911036/884558109664751636/github_img.gif)
 
+## User 
+| Command | Description | Flags | Examples |
+| --- | ----------- |---------|----|
+| `+user <name>` | Shows information about a user's list or their profile. |`manga` <br /> `reading` <br /> `plantoread` <br /> `completed` <br /> `dropped` <br /> `onhold` <br /> `plantowatch` <br /> `watching`| `+user wildcyclotron` <br /> `+user wildcyclotron --watching` <br />  `+u wildcyclotron --completed` <br />  `+u wildcyclotron --onhold` <br />  `+u wildcyclotron --ptw `<br /> ` +u wildcyclotron --dropped` <br />` +u wildcyclotron --completed --m `<br /> ` +u wildcyclotron --dropped --m `<br />`  +u wildcyclotron --onhold --m `<br /> `+u wildcyclotron --reading` <br /> ` +u wildcyclotron --ptr` |
+
+### Screenshots
+![user info](https://media.discordapp.net/attachments/870414758006911036/885517666608091157/user_info.gif)
+![user status](https://media.discordapp.net/attachments/870414758006911036/885523201625583626/user_status.gif)
 # Installing
 * Make sure to get Python 3.8 or higher.
 
