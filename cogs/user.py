@@ -7,7 +7,7 @@ from discord.ext.commands import MissingRequiredArgument
 from cogs.getjson import jikanjson
 from cogs.userflags import userstatus
 
-"""To get the lists of animes/mangas and send them in the form embed."""
+"""To get the lists of animes/mangas and send them in the form of an embed."""
 
 async def status(ctx,userlist,title):
   status_list = []
@@ -17,7 +17,7 @@ async def status(ctx,userlist,title):
   embed=discord.Embed(title=title,color=0x70ff72,description=status)
   await ctx.send(embed=embed)
 
-"""To get the lists of animes/mangas and send them in the form multiple embeds when length > 15."""
+"""To get the lists of animes/mangas and send them in the form of multiple embeds when length > 15."""
 
 async def bigstatus(ctx,userlist,title):
   status_list = []
@@ -39,7 +39,7 @@ async def bigstatus(ctx,userlist,title):
   paginator.add_reaction('🔐', "lock")
   await paginator.run(embed_list)
   
-"""To remove the html tags from the about page return string."""
+"""To remove the html tags from the about page and return string."""
 
 def htmltag(text,username):
   if text:
