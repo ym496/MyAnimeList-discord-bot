@@ -104,7 +104,7 @@ class User_Info(commands.Cog):
     time.sleep(3)
     await msg.delete()
 
-    """Send different outputs depending on the flags passed. I don't know if this is the best way to do it."""
+    """Sends different outputs depending on the flags passed. I don't know if this is the best way to do it."""
     
     if flags['watching']==True:
       url = f'https://api.jikan.moe/v3/user/{name}/animelist/watching'
