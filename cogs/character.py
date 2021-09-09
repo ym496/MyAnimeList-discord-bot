@@ -106,7 +106,14 @@ class Character_Info(commands.Cog):
     search = search_result['data'][n]
     characterid = search['mal_id']
     char_pictures = jikanjson(f'https://api.jikan.moe/v4/characters/{characterid}/pictures')
-    pic_len = len(char_pictures['data']) 
+    pic_len = len(char_pictures['data'])
+    
+    if pic_len == 0:
+      await ctx.send(f'Zero pictures available for this character.')
+      return
+    else:
+      pass
+    
     pic_list = [] 
     for i in range(0,pic_len):
       pic_list.append(char_pictures['data'][i]['large_image_url'])
