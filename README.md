@@ -21,7 +21,7 @@ A discord bot made to surf the MyAnimeList website on discord with the help of t
 ## Character
 | Commands | Description | Examples|
 | --- | ----------- |---------|
-| `+char <name>` | Get Information about the requested character. |+anime Hyouka, +anime NHK ni Youkoso!|
+| `+char <name>` | Get Information about the requested character. |+char Mikasa, +char Oreki|
 |`+images <name>` | Get images for the requested character. |+images Mikasa, +im Eru Chitanda|
 
 ### Screenshots
