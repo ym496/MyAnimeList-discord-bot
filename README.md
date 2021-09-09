@@ -2,7 +2,7 @@
 # MyAnimeList-discord-bot
 A python bot made to surf MyAnimeList website from discord.
 # Overview 
-A discord bot to surf the MyAnimeList website on discord with the help of the [Jikan REST API](https://github.com/jikan-me/jikan-rest). View the information about any anime, manga, character etc. using advanced search commands. Look into the pictures of your favourite character from any anime or manga using a single search command. 
+A discord bot made to surf the MyAnimeList website on discord with the help of the [Jikan REST API](https://github.com/jikan-me/jikan-rest). View the information about any anime, manga, character etc. using advanced search commands. Look into the pictures of your favourite character from any anime or manga using a single search command. 
 # Planned
 | Commands      | Description |
 | ----------- | ----------- |
